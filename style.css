@@ -1,0 +1,147 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* --- Initial Location Button --- */
+#getlocation {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+#getlocation:hover {
+    background-color: #ff4c4c;
+}
+
+/* --- Weather Card Container --- */
+.weather-card {
+    background: white;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.weather-card.active-card {
+    border: 2px solid #2c3e50;
+    padding: 20px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.weather-card.fallback-card {
+    border: 2px solid #2c3e50;
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* --- Weather Information Styling --- */
+.weather-info {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.weather-info h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stat-box.blue {
+    background-color: #1086fc;
+    color: white;
+}
+
+.stat-box.green {
+    background-color: #0cee3d;
+    color: #111;
+}
+
+/* --- Fallback Input/Form Elements --- */
+.city-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.city-input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #1a252f;
+}
+
+/* --- Error Warning --- */
+.warning-text {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* --- UV Ray Status --- */
+.uv-status {
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* --- Icon Container --- */
+#icon img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
